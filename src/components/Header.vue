@@ -34,7 +34,7 @@ export default{
             //send our username to the server
             //pop up loading message
             const hide = message.loading({content:()=>this.loadingText, duration:0});
-            axios.post("http://localhost:3000/login",{
+            axios.post("http://106.55.227.69/api/login",{
                 username:this.value
             })
             .then((res)=>{

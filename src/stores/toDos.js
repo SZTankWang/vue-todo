@@ -15,7 +15,7 @@ export const useToDoStore = defineStore("toDos",{
   actions:{
      addToDo(newToDo){
       //insert to database 
-      return axios.post("http://localhost:3000/addToDo",{
+      return axios.post("http://106.55.227.69/api/addToDo",{
         task:newToDo.title,
         user:this.user
       })
@@ -46,7 +46,7 @@ export const useToDoStore = defineStore("toDos",{
       console.log(this.toDos);
 
       //update with db
-      return axios.post("http://localhost:3000/removeToDo",{
+      return axios.post("http://106.55.227.69/api/removeToDo",{
         task:title,
         name:this.user
       })

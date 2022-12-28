@@ -32,7 +32,7 @@ export default defineComponent(
       getCurrentUser(name){
         console.log("quering todo for user",name);
         let msg =message.loading({content:"获取待办",duration:0});
-        axios.get("http://localhost:3000/getToDo",{
+        axios.get("http://106.55.227.69/api/getToDo",{
           params:{
             name:this.store.getUser
           }
