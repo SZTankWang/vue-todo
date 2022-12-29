@@ -70,6 +70,7 @@ export default defineComponent(
 .mycontainer{
   height:100vh;
   width:100vw;
+  min-height: -webkit-fill-available;
   /* display: flex; */
 
   /* background-color: aliceblue; */
