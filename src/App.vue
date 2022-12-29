@@ -60,16 +60,7 @@ export default defineComponent(
   },
   mounted(){
     
-    // axios.get("http://localhost:3000/",{
-    //   params:{
-    //     name:"admin"
-    //   }
-    // }).then((res)=>{
-    //   console.log("message from server")
-    //   console.log("server:",res);
-    // }).catch(err=>{
-    //   console.log(err);
-    // })
+    this.$router.push("/todo");
   }
   }
 ) 
